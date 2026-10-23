@@ -6,8 +6,7 @@ class Smartphone:
         self.is_on = False
 
     def power(self):
-        if True:
-            self.is_on = True
+        self.is_on = not self.is_on
 
     def install(self, application: str, memory_required: int):
         if not self.is_on:

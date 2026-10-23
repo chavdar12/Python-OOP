@@ -1,4 +1,4 @@
-from knight import Knight
+from project.knight import Knight
 
 
 class DarkKnight(Knight):

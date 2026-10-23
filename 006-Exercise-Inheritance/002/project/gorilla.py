@@ -1,4 +1,4 @@
-from mammal import Mammal
+from project.mammal import Mammal
 
 
 class Gorilla(Mammal):

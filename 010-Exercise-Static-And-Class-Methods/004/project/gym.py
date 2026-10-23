@@ -53,7 +53,7 @@ class Gym:
                 break
 
         for this_plan in self.plans:
-            if trainer_to_display_id == this_plan.trainer_id:
+            if this_subscription.exercise_id == this_plan.id:
                 plan_of_interest = this_plan
                 to_add_plan_str_at_the_end = str(this_plan)
                 break

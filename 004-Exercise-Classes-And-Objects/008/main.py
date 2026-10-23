@@ -20,7 +20,6 @@ library.books_available.update({'J.K.Rowling': ['The Chamber of Secrets',
                                                 'The Half-Blood Prince',
                                                 'The Deathly Hallows']})
 
-
 user.get_book('J.K.Rowling', 'The Deathly Hallows', 17, library)
 print(library.books_available)
 print(library.rented_books)

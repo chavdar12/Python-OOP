@@ -1,6 +1,6 @@
-from worker import Worker
-
 import unittest
+
+from worker import Worker
 
 '''
     • Test if the worker is initialized with the correct name, salary, and energy

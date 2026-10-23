@@ -25,7 +25,7 @@ class Pizza:
 
     @dough.setter
     def dough(self, value):
-        if value == None:
+        if value is None:
             raise ValueError("You should add dough to the pizza")
         self.__dough = value
 
@@ -35,7 +35,7 @@ class Pizza:
 
     @toppings_capacity.setter
     def toppings_capacity(self, value):
-        if value == 0:
+        if value <= 0:
             raise ValueError("The topping's capacity cannot be less or equal to zero")
         self.__toppings_capacity = value
 

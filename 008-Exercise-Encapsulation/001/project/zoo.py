@@ -12,10 +12,10 @@ class Zoo:
         self.workers = []
 
     def add_animal(self, animal: Animal, price):
-        if price > self.__budget:
-            return "Not enough budget"
         if len(self.animals) == self.__animal_capacity:
             return "Not enough space for animal"
+        if price > self.__budget:
+            return "Not enough budget"
 
         self.animals.append(animal)
         self.__budget -= price

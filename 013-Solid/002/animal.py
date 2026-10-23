@@ -2,7 +2,7 @@ class Animal:
     _sound = ""
     _species = ""
 
-    def get_speies(self):
+    def get_species(self):
         return self._species
 
     def get_sound(self):

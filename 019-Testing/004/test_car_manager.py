@@ -1,6 +1,6 @@
-from car_manager import Car
-
 import unittest
+
+from car_manager import Car
 
 
 class test_car_manager(unittest.TestCase):

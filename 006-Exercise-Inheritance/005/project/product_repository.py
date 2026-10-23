@@ -1,4 +1,4 @@
-from product import Product
+from project.product import Product
 
 
 class ProductRepository:
@@ -14,9 +14,7 @@ class ProductRepository:
                 return this_product
 
     def remove(self, product_name):
-        for this_product in self.products:
-            if this_product.name == product_name:
-                self.products.remove(this_product)
+        self.products = [p for p in self.products if p.name != product_name]
 
     def __repr__(self):
         result_dict = {}

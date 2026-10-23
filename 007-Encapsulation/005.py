@@ -14,4 +14,3 @@ class Account:
             self.__pin = new_pin
             return "Pin changed"
         return "Wrong pin"
-

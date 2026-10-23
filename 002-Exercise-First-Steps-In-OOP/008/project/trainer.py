@@ -1,4 +1,4 @@
-from pokemon import Pokemon
+from project.pokemon import Pokemon
 
 
 class Trainer:
@@ -11,7 +11,7 @@ class Trainer:
             return "This pokemon is already caught"
 
         self.pokemons.append(pokemon)
-        return f"Caught {Pokemon.pokemon_details(pokemon)}"
+        return f"Caught {pokemon.pokemon_details()}"
 
     def release_pokemon(self, pokemon_name: str):
         for this_pokemon in self.pokemons:
@@ -22,12 +22,7 @@ class Trainer:
         return "Pokemon is not caught"
 
     def trainer_data(self):
-        caught_pokemons_as_str = ""
+        result = f"Pokemon Trainer {self.name}\nPokemon count {len(self.pokemons)}"
         for each_pokemon in self.pokemons:
-            caught_pokemons_as_str += f"- {each_pokemon.pokemon_details()}\n"
-        result = f"""
-Pokemon Trainer {self.name}
-Pokemon count {len(self.pokemons)}
-{caught_pokemons_as_str}
-"""
+            result += f"\n- {each_pokemon.pokemon_details()}"
         return result
