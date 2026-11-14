@@ -12,7 +12,7 @@ class Person:
         # return f"{self.name} {self.surname}"
 
 
-class Group(Person):
+class Group:
     def __init__(self, name, people):
         self.name = name
         self.people: list = people
