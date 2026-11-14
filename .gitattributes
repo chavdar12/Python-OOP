@@ -1,0 +1,23 @@
+# Normalize line endings to LF in the repo; check out native for anything unlisted
+* text=auto eol=lf
+
+*.py    text diff=python
+*.md    text diff=markdown
+*.txt   text
+*.yml   text
+*.yaml  text
+*.toml  text
+*.cfg   text
+*.ini   text
+*.json  text
+*.sh    text eol=lf
+*.bat   text eol=crlf
+*.ps1   text eol=crlf
+
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.pdf   binary
+*.zip   binary
